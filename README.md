@@ -11,10 +11,15 @@
 
 ## Project Structure
 
-.
-├── ...
-├── test                    # Test files (alternatively `spec` or `tests`)
-│   ├── benchmarks          # Load and stress tests
-│   ├── integration         # End-to-end, integration tests (alternatively `e2e`)
-│   └── unit                # Unit tests
-└── ...
+golang-crud/
+├── config/
+│   └── database.go         
+├── controllers/
+│   └── person_controller.go
+├── models/
+│   └── person.go           
+├── routes/
+│   └── person_routes.go    
+├── .env                    
+├── main.go                 
+├── go.mod                  
