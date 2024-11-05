@@ -2,14 +2,16 @@
 
 ## Requirements
 
-- Go version 1.22 or newer
-- PostgreSQL version 15 or newer
+- Go VERSI 1.22 atau yang paling baru
+- PostgreSQL versi 15 atau yang paling baru
 - Dependency manager `go mod`
 - Libraries:
-  - [Gin](https://github.com/gin-gonic/gin) for web framework
-  - [PGX](https://github.com/jackc/pgx) for PostgreSQL connection
+  - [Gin](https://github.com/gin-gonic/gin)
+  - [PGX](https://github.com/jackc/pgx)
+  - [GODOTENV](https://github.com/joho/godotenv)
+  - 
 
 ## Setup Instructions
 1. **Clone the Repository**
 2.  ```bash git clone https://github.com/MuhammadFaiz01/golang-crud.git```
-   cd person-api
+      - cd person-api
