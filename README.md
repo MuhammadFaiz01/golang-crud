@@ -19,7 +19,7 @@
 
 ## API Endpoints and Testing
 **Create New Person**
-1. Endpoint `POST`, `/person`
+- Endpoint `POST`, `/person`
    ```json
     {
     "full_name": "John Doe",
