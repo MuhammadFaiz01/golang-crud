@@ -18,7 +18,7 @@
 4. go run main.go
 
 ## API Endpoints and Testing
-**Create New Person**
+  **Create New Person**
 - Endpoint `POST`, `/person`
    ```json
     {
@@ -37,5 +37,53 @@
     "age": 30,
     "birth_date": "1993-04-15",
     "address": "123 Main St, Cityville"
+    }
+  ```
+
+  **Get a Person by Full Name**
+  - Endpoint `GET`, `/person?full_name={full_name}`
+  - Contoh Request `http GET /person?full_name=John Doe`
+  - Status `200 ok`
+  - Body
+     ```json
+    {
+     "id": 1,
+    "full_name": "John Doe",
+    "age": 30,
+    "birth_date": "1993-04-15",
+    "address": "123 Main St, Cityville"
+    }
+  ```
+
+**Update an Existing Person**
+- Endpoint `PUT`, `PUT /person?id={id}`
+   ```json
+    {
+    "full_name": "John A. Doe",
+    "age": 31,
+    "birth_date": "1993-04-15",
+    "address": "456 Elm St, Cityville"
+    }
+    ```
+- Status `200 ok`
+- Body
+     ```json
+    {
+     "message": "Person updated successfully"
+    }
+  ```
+     
+**Delete a Person by ID**
+- Endpoint `DELETE`, `DELETE /person?id={id}`
+    ```json
+    {
+    DELETE /person?id=1
+    }
+    ```
+- Status `200 ok`
+- - Body
+     ```json
+    {
+     "message": "Person deleted successfully"
     }
   ```
