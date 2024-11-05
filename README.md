@@ -9,17 +9,8 @@
   - [Gin](https://github.com/gin-gonic/gin) for web framework
   - [PGX](https://github.com/jackc/pgx) for PostgreSQL connection
 
-## Project Structure
-
-golang-crud/
-├── config/
-│   └── database.go         
-├── controllers/
-│   └── person_controller.go
-├── models/
-│   └── person.go           
-├── routes/
-│   └── person_routes.go    
-├── .env                    
-├── main.go                 
-├── go.mod                  
+## Setup Instructions
+1. **Clone the Repository**
+2.  ```bash
+   git clone https://github.com/yourusername/person-api.git
+   cd person-api
