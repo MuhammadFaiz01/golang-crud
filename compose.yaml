@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: mydb
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+  golang:
+    image: golang:1.22
+    volumes:
+      - ./:/go/src/app
+    working_dir: /go/src/app
+    command: sh -c "go run main.go"
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    environment:
+      - DATABASE_URL=postgres://user:password@postgres:5432/mydb?sslmode=disable
+
+volumes:
+  postgres-data:
