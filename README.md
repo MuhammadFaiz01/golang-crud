@@ -40,7 +40,7 @@
     }
   ```
 
-  **Get a Person by Full Name**
+**Get a Person by Full Name**
   - Endpoint `GET`, `/person?full_name=Sabit`
   - Contoh Request `http GET /person?full_name=Faiz`
   - Status `200 ok`
@@ -53,7 +53,7 @@
         "birth_date": "1993-04-15",
         "address": "123 Main St, Cityville"
     }
-  ```
+    ```
 **Update an Existing Person**
 - Endpoint `PUT`, `PUT /person?id=1`
    ```json
