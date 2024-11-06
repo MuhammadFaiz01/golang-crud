@@ -41,17 +41,17 @@
   ```
 
 **Get a Person by Full Name**
-  - Endpoint `GET`, `/person?full_name=Sabit`
-  - Contoh Request `http GET /person?full_name=Faiz`
+  - Endpoint `GET`, `/person?full_name=full_name`
+  - Contoh Request `http GET /person?full_name=Indra`
   - Status `200 ok`
   - Body
      ```json
     {
-        "id": 1,
-        "full_name": "John Doe",
-        "age": 30,
-        "birth_date": "1993-04-15",
-        "address": "123 Main St, Cityville"
+        "id": 5,
+        "full_name": "Indra",
+        "age": 19,
+        "birth_date": "2005-10-15T00:00:00Z",
+        "address": "Jalan Rambang"
     }
     ```
 **Update an Existing Person**
