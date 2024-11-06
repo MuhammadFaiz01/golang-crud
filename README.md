@@ -75,9 +75,7 @@
 **Delete a Person by ID**
 - Endpoint `DELETE`, `DELETE /person?id=${id}`
     ```URL
-    {
       DELETE /person?id=1
-    }
     ```
 - Status `200 ok`
 - - Body
