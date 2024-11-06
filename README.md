@@ -74,7 +74,7 @@
      
 **Delete a Person by ID**
 - Endpoint `DELETE`, `DELETE /person?id=${id}`
-    ```json
+    ```URL
     {
       DELETE /person?id=1
     }
