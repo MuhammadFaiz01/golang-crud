@@ -22,10 +22,10 @@
 - Endpoint `POST`, `/person`
    ```json
     {
-      "full_name": "Faiz",
-      "age": 31,
-      "birth_date": "1992-04-15",
-      "address": "456 New Street, City"
+      "full_name": "rendi",
+      "age": 25,
+      "birth_date": "1994-05-15T00:00:00Z",
+      "address": "Jalan Kemang"
     }
     ```
 - Status `201 Created`
@@ -35,7 +35,7 @@
       "id": 0,
       "full_name": "Faiz",
       "age": 31,
-      "birth_date": "1992-04-15",
+      "birth_date": "1994-05-15T00:00:00Z",
       "address": "456 New Street, City"
     }
   ```
@@ -60,7 +60,7 @@
     {
       "full_name": "Aflah",
       "age": 20,
-      "birth_date": "2005-10-15",
+      "birth_date": "1994-05-15T00:00:00Z",
       "address": "Jalan Rambang"
     }
     ```
