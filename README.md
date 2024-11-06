@@ -18,51 +18,50 @@
 4. go run main.go
 
 ## API Endpoints and Testing
-  **Create New Person**
+**Create New Person**
 - Endpoint `POST`, `/person`
    ```json
     {
-    "full_name": "John Doe",
-    "age": 30,
-    "birth_date": "1993-04-15",
-    "address": "123 Main St, Cityville"
+      "full_name": "rendi",
+      "age": 25,
+      "birth_date": "1994-05-15T00:00:00Z",
+      "address": "Jalan Kemang"
     }
     ```
 - Status `201 Created`
 - Body
   ```json
     {
-    "id": 1,
-    "full_name": "John Doe",
-    "age": 30,
-    "birth_date": "1993-04-15",
-    "address": "123 Main St, Cityville"
+      "id": 0,
+      "full_name": "Faiz",
+      "age": 31,
+      "birth_date": "1994-05-15T00:00:00Z",
+      "address": "456 New Street, City"
     }
   ```
 
-  **Get a Person by Full Name**
-  - Endpoint `GET`, `/person?full_name={full_name}`
-  - Contoh Request `http GET /person?full_name=John Doe`
+**Get a Person by Full Name**
+  - Endpoint `GET`, `/person?full_name=full_name`
+  - Contoh Request `http GET /person?full_name=Indra`
   - Status `200 ok`
   - Body
      ```json
     {
-     "id": 1,
-    "full_name": "John Doe",
-    "age": 30,
-    "birth_date": "1993-04-15",
-    "address": "123 Main St, Cityville"
+        "id": 5,
+        "full_name": "Indra",
+        "age": 19,
+        "birth_date": "2005-10-15T00:00:00Z",
+        "address": "Jalan Rambang"
     }
-  ```
-
+    ```
 **Update an Existing Person**
-- Endpoint `PUT`, `PUT /person?id={id}`
+- Endpoint `PUT`, `PUT /person?id=1`
    ```json
     {
-    "full_name": "John A. Doe",
-    "age": 31,
-    "birth_date": "1993-04-15",
-    "address": "456 Elm St, Cityville"
+      "full_name": "Aflah",
+      "age": 20,
+      "birth_date": "1994-05-15T00:00:00Z",
+      "address": "Jalan Rambang"
     }
     ```
 - Status `200 ok`
@@ -74,16 +73,14 @@
   ```
      
 **Delete a Person by ID**
-- Endpoint `DELETE`, `DELETE /person?id={id}`
-    ```json
-    {
-    DELETE /person?id=1
-    }
+- Endpoint `DELETE`, `DELETE /person?id=${id}`
+    ```URL
+      DELETE /person?id=1
     ```
 - Status `200 ok`
 - - Body
      ```json
     {
-     "message": "Person deleted successfully"
+        "message": "Person deleted successfully"
     }
-  ```
+    ```
