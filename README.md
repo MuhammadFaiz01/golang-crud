@@ -54,7 +54,6 @@
         "address": "123 Main St, Cityville"
     }
   ```
-
 **Update an Existing Person**
 - Endpoint `PUT`, `PUT /person?id=1`
    ```json
