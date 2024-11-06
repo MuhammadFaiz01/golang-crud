@@ -18,7 +18,7 @@
 4. go run main.go
 
 ## API Endpoints and Testing
-  **Create New Person**
+**Create New Person**
 - Endpoint `POST`, `/person`
    ```json
     {
